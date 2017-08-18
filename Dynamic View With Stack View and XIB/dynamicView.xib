@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="dynamicSupport" customModule="Dynamic_View_With_Stack_View_and_XIB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmP-51-5wR">
+                    <rect key="frame" x="12" y="17" width="58" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="FEI-qP-t2e"/>
+                        <constraint firstAttribute="width" constant="58" id="TKL-eQ-pYm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcs-gU-3Qv">
+                    <rect key="frame" x="66" y="17" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="30o-61-7OE"/>
+                        <constraint firstAttribute="height" constant="21" id="euO-uw-lYc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00 Am to 03:00 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFL-fB-Q22">
+                    <rect key="frame" x="116" y="17" width="215" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ftN-Vc-Fsv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fcs-gU-3Qv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="Dvr-Hb-Bjm"/>
+                <constraint firstItem="ZFL-fB-Q22" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="FJX-kT-AUF"/>
+                <constraint firstItem="ZFL-fB-Q22" firstAttribute="leading" secondItem="fcs-gU-3Qv" secondAttribute="trailing" constant="8" id="VR3-l7-YKc"/>
+                <constraint firstAttribute="trailing" secondItem="ZFL-fB-Q22" secondAttribute="trailing" id="XpW-v5-v9A"/>
+                <constraint firstItem="fmP-51-5wR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="YM1-UW-Y1j"/>
+                <constraint firstItem="fcs-gU-3Qv" firstAttribute="leading" secondItem="fmP-51-5wR" secondAttribute="trailing" constant="-4" id="lTH-Uo-jtm"/>
+                <constraint firstItem="fmP-51-5wR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="trR-SB-QdI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblDay" destination="fmP-51-5wR" id="y9m-Wh-5tf"/>
+                <outlet property="lblTime" destination="ZFL-fB-Q22" id="ECD-zI-XnI"/>
+            </connections>
+            <point key="canvasLocation" x="28.5" y="-203.5"/>
+        </view>
+    </objects>
+</document>
